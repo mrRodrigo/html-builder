@@ -1,0 +1,9 @@
+{
+    "reporterEnabled": "spec, mocha-junit-reporter, xunit",
+    "xunitReporterOptions": {
+        "output": "./test-results/xunit-unit.xml"
+    },
+    "mochaJunitReporterReporterOptions": {
+        "mochaFile": "./test-results/junit-unit.xml"
+    }
+}

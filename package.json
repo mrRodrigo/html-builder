@@ -1,0 +1,23 @@
+{
+  "name": "htmlbuilder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "unit": "mocha --config test/config/.mocharc.unit.json --reporter mocha-multi-reporters --reporter-options configFile=test/config/reporter.unit.config.json --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chai-spies": "^1.0.0",
+    "dirty-chai": "^2.0.1",
+    "html-tags": "^3.2.0",
+    "mocha": "^10.0.0",
+    "mocha-multi-reporters": "^1.5.1"
+  }
+}
