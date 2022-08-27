@@ -1,14 +1,14 @@
-const HTMLTags = require("html-tags");
+const HTMLTags = require('html-tags');
 
 module.exports = class HtmlBuilder {
   constructor() {
-    this.html = "";
+    this.html = '';
     this.openTags = [];
 
     HTMLTags.forEach((tag) => {
       HtmlBuilder.prototype[tag] = function (
         attributes = {},
-        innerContent = "",
+        innerContent = '',
         options = {}
       ) {
         this.html += `<${tag}${this._buildAttributes(attributes)}>`;
@@ -25,7 +25,7 @@ module.exports = class HtmlBuilder {
 
       HtmlBuilder.prototype[`inner${tag}`] = function (
         attributes = {},
-        innerContent = ""
+        innerContent = ''
       ) {
         return new HtmlBuilder()[tag](attributes, innerContent).build();
       };
@@ -40,7 +40,7 @@ module.exports = class HtmlBuilder {
   _buildAttributes(attributes) {
     return Object.keys(attributes)
       .map((key) => ` ${key}="${attributes[key]}"`)
-      .join("");
+      .join('');
   }
 
   build() {
