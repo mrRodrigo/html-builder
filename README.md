@@ -1,6 +1,13 @@
 # Simple html builder for js
 
 
+
+```
+npm i simple-html-builder
+```
+
+
+
 Each html tag has two functions, eg: using p tag:
 
 
