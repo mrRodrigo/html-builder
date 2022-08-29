@@ -13,7 +13,7 @@ Each html tag has two functions, eg: using p tag:
 
 ```javascript
 
-const html = new HtmlBuilder;
+const html = new HtmlBuilder();
 
 html.p(); // this function stack p tag and resolve on the build function
 
@@ -39,7 +39,7 @@ For build simple html string:
 const HtmlBuilder = require('../index.js');
 
 
-const html = new HtmlBuilder
+const html = new HtmlBuilder()
     .div({ class: 'test' })
     .p({}, 'test')
     .build();
@@ -59,7 +59,7 @@ For build html with inner tags with custom params like class and styles.
 const HtmlBuilder = require('../index.js');
 
 
-const html = new HtmlBuilderhtmlBuilder
+const html = new HtmlBuilderhtmlBuilder()
             .tr()
             .td(
               { class: 'column' },
