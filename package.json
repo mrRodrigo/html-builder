@@ -6,6 +6,10 @@
   "directories": {
     "test": "test"
   },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/mrRodrigo/html-builder"
+  },
   "scripts": {
     "test": "mocha --config test/config/.mocharc.unit.json --reporter mocha-multi-reporters --reporter-options configFile=test/config/reporter.unit.config.json --exit"
   },
