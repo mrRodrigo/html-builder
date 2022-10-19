@@ -1,7 +1,8 @@
 # Simple html builder for js
 
-
-
+![](https://img.shields.io/bundlephobia/min/simple-html-builder)
+![](https://img.shields.io/npm/dy/simple-html-builder)
+![](https://img.shields.io/npm/v/simple-html-builder)
 ```
 npm i simple-html-builder
 ```
